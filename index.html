@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Butler — Conciergerie de gîtes · Plateau de Herve, Spa, Ardennes</title>
+  <meta name="description" content="Conciergerie dédiée aux gîtes et hébergements de vacances. Commercialisation, intendance et expérience voyageurs sur le Plateau de Herve, à Spa et dans les Ardennes.">
+  <meta name="theme-color" content="#0f1f45">
+  <meta property="og:title" content="Maison Butler — Conciergerie de gîtes · Plateau de Herve, Spa, Ardennes">
+  <meta property="og:description" content="Conciergerie dédiée aux gîtes et hébergements de vacances. Commercialisation, intendance et expérience voyageurs sur le Plateau de Herve, à Spa et dans les Ardennes.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Intro : logo au centre puis ouverture des portes -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro__door intro__door--l"></div>
+    <div class="intro__door intro__door--r"></div>
+    <div class="intro__stage">
+      <div class="intro__mark"><img src="assets/img/logo.jpg" alt=""></div>
+      <div class="intro__bar"><i></i></div>
+      <div class="intro__skip">Entrer</div>
+    </div>
+  </div>
+  <div class="transition" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Maison Butler — accueil">
+        <svg class="brand__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path class="mark-gold" d="M38 92.3 A44 44 0 1 1 62 92.3" stroke-width="1.8"/>
+          <path class="mark-stroke" d="M28 35 L50 18 L72 35" stroke-width="3.2"/>
+          <rect class="mark-gold-fill" x="47" y="26" width="2.7" height="2.7"/><rect class="mark-gold-fill" x="50.3" y="26" width="2.7" height="2.7"/>
+          <rect class="mark-gold-fill" x="47" y="29.3" width="2.7" height="2.7"/><rect class="mark-gold-fill" x="50.3" y="29.3" width="2.7" height="2.7"/>
+          <text class="mark-text" x="50" y="68" text-anchor="middle" font-size="37" font-weight="500">MB</text>
+          <path class="mark-gold" d="M42 82 H64 M60 82 V86 M63 82 V86 M34 82 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0" stroke-width="2"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Maison Butler</span>
+          <span class="brand__tag">Conciergerie de gîtes</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav__link is-active">Accueil</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="proprietaires.html" class="nav__link">Propriétaires</a>
+        <a href="destinations.html" class="nav__link">Destinations</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--gold">Confier mon gîte</a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html" class="m-link is-active"><span>Accueil</span></a>
+    <a href="services.html" class="m-link"><span>Services</span></a>
+    <a href="proprietaires.html" class="m-link"><span>Propriétaires</span></a>
+    <a href="destinations.html" class="m-link"><span>Destinations</span></a>
+    <a href="contact.html" class="m-link"><span>Contact</span></a>
+    <div class="mobile-menu__foot">Plateau de Herve · Spa · Ardennes</div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media"><img src="assets/img/hero.jpg" alt="Terrasse d'un gîte en pierre avec piscine, face aux prairies du Plateau de Herve" data-parallax="0.12"></div>
+      <div class="container hero__content">
+        <span class="eyebrow" data-reveal>Conciergerie de gîtes · L'art du service</span>
+        <h1 class="display hero__title" data-split>L'art de recevoir, <em>en votre absence.</em></h1>
+        <div class="hero__bottom">
+          <p class="hero__desc" data-reveal style="--d:500ms">
+            <strong>Vous êtes propriétaire d'un gîte ?</strong>
+            Confiez-nous sa gestion, nous veillons à chaque détail — de la mise en ligne de votre annonce jusqu'au dernier sourire de vos voyageurs.
+          </p>
+          <div class="hero__actions" data-reveal style="--d:700ms">
+            <a href="contact.html" class="btn btn--gold">Confier mon gîte</a>
+            <a href="services.html" class="btn btn--ghost-light">Nos services</a>
+          </div>
+        </div>
+        <div class="hero__regions" data-reveal style="--d:900ms">
+          <span>Plateau de Herve</span><i></i><span>Spa</span><i></i><span>Ardennes</span>
+        </div>
+      </div>
+      <div class="scroll-cue">Découvrir</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__item">
+          <span>Commercialisation</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <em>Intendance</em>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <span>Expérience voyageurs</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <em>L'art du service</em>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+        </div>
+        <div class="marquee__item">
+          <span>Commercialisation</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <em>Intendance</em>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <span>Expérience voyageurs</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <em>L'art du service</em>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cfa865" stroke-width="1"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="section">
+      <div class="container split">
+        <div class="intro__media">
+          <div class="img-reveal main"><img src="assets/img/terrasse.jpg" alt="Coucher de soleil sur une piscine de gîte et la campagne" loading="lazy"></div>
+          <div class="img-reveal float" style="--d:300ms"><img src="assets/img/table.jpg" alt="Table dressée sur la terrasse d'un gîte" loading="lazy"></div>
+          <div class="intro__badge" data-reveal="scale" style="--d:600ms">
+            <svg class="ring" viewBox="0 0 130 130"><defs><path id="circ" d="M65 65 m-50 0 a50 50 0 1 1 100 0 a50 50 0 1 1 -100 0"/></defs><text><textPath href="#circ">Maison Butler · L'art du service · </textPath></text></svg>
+            <svg class="key" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="14" cy="24" r="7"/><circle cx="14" cy="24" r="3.5"/><path d="M21 24h22M37 24v6M42 24v5"/></svg>
+          </div>
+        </div>
+        <div class="intro__text">
+          <span class="eyebrow">Notre maison</span>
+          <h2 data-split>Un majordome <em class="gold">pour votre gîte</em>, un hôte pour vos voyageurs.</h2>
+          <div class="divider"></div>
+          <p class="lead" data-reveal>Maison Butler est une conciergerie dédiée aux gîtes &amp; hébergements de vacances. Nous prenons en charge ce qui fait la réussite d'une location : la visibilité, l'entretien et l'accueil.</p>
+          <p data-reveal style="--d:120ms">Implantés entre le Plateau de Herve, Spa et les Ardennes, nous connaissons chaque chemin, chaque artisan et chaque table qui compte. Vous gardez la sérénité d'un propriétaire, nous assurons l'exigence d'une maison d'hôtes.</p>
+          <div data-reveal style="--d:240ms"><a href="proprietaires.html" class="btn">Notre approche</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow eyebrow--center">Pourquoi nous confier votre gîte</span>
+          <h2 data-split>Nous veillons <em class="gold">à chaque détail.</em></h2>
+          <p class="lead" data-reveal>Une gestion totale ou partielle, pensée pour vous libérer du quotidien et offrir à vos hôtes un séjour dont ils se souviendront.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar" data-reveal>
+            <div class="icon-circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M6 22L24 7l18 15"/><path d="M11 18v23h26V18"/><path d="M20 41V29h8v12"/></svg></div>
+            <h3>Une gestion sur mesure</h3>
+            <p>Totale ou partielle, selon vos besoins et vos envies.</p>
+          </article>
+          <article class="pillar" data-reveal style="--d:150ms">
+            <div class="icon-circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M24 38c-5-4-7-9-7-14s3-11 7-15c4 4 7 10 7 15s-2 10-7 14z"/><path d="M24 38c-7 0-13-3-16-9 3-2 6-3 9-3"/><path d="M24 38c7 0 13-3 16-9-3-2-6-3-9-3"/><path d="M24 38c-9 1-16-2-19-6"/><path d="M24 38c9 1 16-2 19-6"/></svg></div>
+            <h3>Plus de temps pour vous</h3>
+            <p>Nous nous occupons de votre gîte au quotidien.</p>
+          </article>
+          <article class="pillar" data-reveal style="--d:300ms">
+            <div class="icon-circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 34a16 16 0 0132 0"/><path d="M5 38h38"/><circle cx="24" cy="16" r="2"/><path d="M24 8v2M16 7l1.5 2.5M32 7l-1.5 2.5"/></svg></div>
+            <h3>Des séjours soignés</h3>
+            <p>Des services personnalisés pour répondre aux envies de vos voyageurs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head split" style="align-items:end">
+          <div>
+            <span class="eyebrow">Nos savoir-faire</span>
+            <h2 data-split>Trois métiers, <em class="gold">une seule exigence.</em></h2>
+          </div>
+          <div data-reveal>
+            <p class="lead">De la première réservation au départ du dernier voyageur, chaque étape est orchestrée avec la discrétion et la précision d'une grande maison.</p>
+            <a href="services.html" class="link-line" style="margin-top:28px">Tous nos services</a>
+          </div>
+        </div>
+        <div class="services">
+          <article class="service-card" data-reveal tabindex="0">
+            <div class="service-card__bg"><img src="assets/img/paysage.jpg" alt="" loading="lazy"></div>
+            <span class="service-card__num">01</span>
+            <h3>Commercialisation</h3>
+            <p>Faire rayonner votre gîte et optimiser son taux d'occupation.</p>
+            <ul>
+              <li>Annonces rédigées &amp; multi-plateformes</li>
+              <li>Tarification dynamique</li>
+              <li>Gestion des réservations</li>
+            </ul>
+          </article>
+          <article class="service-card" data-reveal style="--d:150ms" tabindex="0">
+            <div class="service-card__bg"><img src="assets/img/piscine.jpg" alt="" loading="lazy"></div>
+            <span class="service-card__num">02</span>
+            <h3>Intendance</h3>
+            <p>Un gîte impeccable, entretenu comme une maison de famille.</p>
+            <ul>
+              <li>Ménage &amp; linge hôtelier</li>
+              <li>Maintenance &amp; petits travaux</li>
+              <li>Contrôle qualité à chaque rotation</li>
+            </ul>
+          </article>
+          <article class="service-card" data-reveal style="--d:300ms" tabindex="0">
+            <div class="service-card__bg"><img src="assets/img/sunset-left.jpg" alt="" loading="lazy"></div>
+            <span class="service-card__num">03</span>
+            <h3>Expérience voyageurs</h3>
+            <p>Un accueil attentionné et des séjours sur mesure.</p>
+            <ul>
+              <li>Accueil &amp; remise des clés</li>
+              <li>Paniers de produits du terroir</li>
+              <li>Conciergerie 7j/7 pendant le séjour</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section--navy section--tight">
+      <div class="container stats">
+        <div class="stat" data-reveal><div class="stat__num"><span data-count="3">0</span></div><div class="stat__label">Régions d'exception</div></div>
+        <div class="stat" data-reveal style="--d:120ms"><div class="stat__num"><span data-count="7">0</span><small>j/7</small></div><div class="stat__label">Présence pour vos hôtes</div></div>
+        <div class="stat" data-reveal style="--d:240ms"><div class="stat__num"><span data-count="1">0</span></div><div class="stat__label">Interlocuteur unique</div></div>
+        <div class="stat" data-reveal style="--d:360ms"><div class="stat__num"><span data-count="100">0</span><small>%</small></div><div class="stat__label">Ancrage local</div></div>
+      </div>
+    </section>
+
+    <!-- REGIONS -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow eyebrow--center">Nos terres</span>
+          <h2 data-split>Du bocage aux <em class="gold">forêts ardennaises.</em></h2>
+        </div>
+        <div class="regions" data-reveal>
+          <a href="destinations.html#herve" class="region is-active">
+            <img src="assets/img/paysage.jpg" alt="Prairies vallonnées du Plateau de Herve" loading="lazy">
+            <span class="region__index">I.</span>
+            <div>
+              <div class="region__title">Plateau de Herve</div>
+              <div class="region__body">
+                <p>Bocage, vergers et fermes en pierre : la douceur d'une campagne gourmande, à deux pas de Liège, Maastricht et Aix-la-Chapelle.</p>
+                <div class="region__tags"><span class="tag">Vergers</span><span class="tag">Terroir</span><span class="tag">Balades</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="destinations.html#spa" class="region">
+            <img src="assets/img/piscine.jpg" alt="Piscine d'un gîte près de Spa" loading="lazy">
+            <span class="region__index">II.</span>
+            <div>
+              <div class="region__title">Spa</div>
+              <div class="region__body">
+                <p>La perle des Ardennes : thermes, sources, Hautes Fagnes et circuit de Spa-Francorchamps. Un art de vivre centenaire.</p>
+                <div class="region__tags"><span class="tag">Bien-être</span><span class="tag">Fagnes</span><span class="tag">Circuit</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="destinations.html#ardennes" class="region">
+            <img src="assets/img/terrasse.jpg" alt="Coucher de soleil sur la campagne ardennaise" loading="lazy">
+            <span class="region__index">III.</span>
+            <div>
+              <div class="region__title">Ardennes</div>
+              <div class="region__body">
+                <p>Forêts profondes, rivières sinueuses et villages de caractère : le grand air pour les familles, les amis et les séminaires.</p>
+                <div class="region__tags"><span class="tag">Nature</span><span class="tag">Kayak</span><span class="tag">Randonnée</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow eyebrow--center">Comment ça se passe</span>
+          <h2 data-split>Quatre étapes <em class="gold">vers la sérénité.</em></h2>
+        </div>
+        <div class="process" data-observe>
+          <div class="process__line"></div>
+          <div class="step" data-reveal><div class="step__dot">i</div><h3>La rencontre</h3><p>Nous visitons votre gîte et écoutons vos attentes, vos contraintes et vos envies.</p></div>
+          <div class="step" data-reveal style="--d:150ms"><div class="step__dot">ii</div><h3>La proposition</h3><p>Une formule sur mesure, totale ou partielle, avec une estimation claire de vos revenus.</p></div>
+          <div class="step" data-reveal style="--d:300ms"><div class="step__dot">iii</div><h3>La mise en scène</h3><p>Photos, annonce, préparation du logement et des petites attentions qui font la différence.</p></div>
+          <div class="step" data-reveal style="--d:450ms"><div class="step__dot">iv</div><h3>L'accueil</h3><p>Nous recevons vos voyageurs et veillons sur votre gîte. Vous suivez tout, sans y penser.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section section--navy">
+      <div class="container quote">
+        <span class="quote__mark" data-reveal>“</span>
+        <blockquote data-split>Le luxe, c'est un service <em>qu'on ne remarque pas</em> — parce que tout est déjà parfait.</blockquote>
+        <cite data-reveal style="--d:400ms">— La promesse Maison Butler</cite>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__media"><img src="assets/img/terrasse.jpg" alt="" data-parallax="0.18" loading="lazy"></div>
+      <div class="container">
+        <span class="eyebrow eyebrow--center">Propriétaires</span>
+        <h2 data-split>Et si votre gîte devenait <em>une adresse qu'on se recommande ?</em></h2>
+        <p class="lead" data-reveal>Parlons de votre projet. Estimation gratuite et sans engagement.</p>
+        <div class="cta__actions" data-reveal style="--d:200ms">
+          <a href="contact.html" class="btn btn--gold">Demander une estimation</a>
+          <a href="services.html" class="btn btn--ghost-light">Découvrir nos formules</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand" data-reveal>
+          <img class="footer__logo" src="assets/img/logo.jpg" alt="Maison Butler — Conciergerie de gîtes, l'art du service">
+          <p>Conciergerie dédiée aux gîtes &amp; hébergements de vacances. Commercialisation, intendance et expérience voyageurs, avec le soin d'un majordome.</p>
+        </div>
+        <div data-reveal style="--d:100ms">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="proprietaires.html">Propriétaires</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-reveal style="--d:200ms">
+          <h4>Nos régions</h4>
+          <ul>
+            <li><a href="destinations.html#herve">Plateau de Herve</a></li>
+            <li><a href="destinations.html#spa">Spa &amp; Hautes Fagnes</a></li>
+            <li><a href="destinations.html#ardennes">Ardennes</a></li>
+          </ul>
+        </div>
+        <div data-reveal style="--d:300ms">
+          <h4>Nous écrire</h4>
+          <ul>
+            <li><a href="mailto:bonjour@maisonbutler.be">bonjour@maisonbutler.be</a></li>
+            <li><a href="tel:+32400000000">+32 (0)4 000 00 00</a></li>
+            <li><a href="contact.html">Demander une estimation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__big" aria-hidden="true">Maison Butler</div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Maison Butler — Conciergerie de gîtes</span>
+        <span class="regions-line">L'art du service</span>
+        <button class="to-top" type="button">Haut de page ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
