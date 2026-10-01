@@ -6,6 +6,12 @@
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+  // Chaque page s'ouvre en haut (le cadre de l'Artifact garde sinon la position de défilement)
+  if (!location.hash) {
+    try { history.scrollRestoration = "manual"; } catch (e) {}
+    window.scrollTo(0, 0);
+  }
+
   /* ---------- Intro : logo au centre, puis les portes s'ouvrent ----------
      Version complète quand on arrive sur le site (lien externe, adresse
      tapée, rechargement). Version courte lors de la navigation interne. */
@@ -15,6 +21,9 @@
     const nav = performance.getEntriesByType('navigation')[0];
     const reload = nav && nav.type === 'reload';
     internal = !reload && !!document.referrer && new URL(document.referrer).origin === location.origin;
+    // Dans un Artifact, le référent est masqué : on se fie au marqueur posé au clic
+    if (!reload && sessionStorage.getItem("mb-internal") === "1") internal = true;
+    sessionStorage.removeItem("mb-internal");
   } catch (e) {}
   const full = !internal && !reduced;
   if (intro) intro.classList.add(full ? 'is-full' : 'is-quick');
@@ -24,6 +33,7 @@
     if (opened) return;
     opened = true;
     if (intro) intro.classList.add('is-open');
+    if (!location.hash) window.scrollTo(0, 0);
     body.classList.remove('is-loading');
     setTimeout(() => {
       body.classList.add('is-ready');
@@ -265,6 +275,7 @@
         if (e.metaKey || e.ctrlKey || e.shiftKey) return;
         e.preventDefault();
         veil.classList.add('is-leaving');
+        try { sessionStorage.setItem("mb-internal", "1"); } catch (err) {}
         setTimeout(() => (window.location.href = href), 750);
       });
     });
